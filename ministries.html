@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministries - Faith Prophetic Prayer Network</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-cross"></i>
+                <span class="logo-text">FPPN</span>
+                <span class="logo-subtitle">Faith Prophetic Prayer Network</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="ministries.html" class="nav-link active">Ministries</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="prayer.html" class="nav-link">Prayer Requests</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Ministries</h1>
+            <p>Discover opportunities to serve, grow, and connect within our church community</p>
+        </div>
+    </section>
+
+    <!-- Ministries Intro -->
+    <section class="ministries-intro">
+        <div class="container">
+            <h2>Growing Together in Service</h2>
+            <p>At Faith Prophetic Prayer Network, we believe every member has been gifted by God to serve others and build up the body of Christ. Our ministries provide opportunities for you to use your gifts, grow in your faith, and make a difference in our church and community.</p>
+            <a href="#get-involved" class="btn btn-primary">Get Involved Today</a>
+        </div>
+    </section>
+
+    <!-- Ministry Categories -->
+    <section class="ministry-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">All Ministries</button>
+                <button class="tab-btn" data-category="prayer">Prayer</button>
+                <button class="tab-btn" data-category="children">Children & Youth</button>
+                <button class="tab-btn" data-category="worship">Worship & Arts</button>
+                <button class="tab-btn" data-category="outreach">Outreach</button>
+                <button class="tab-btn" data-category="discipleship">Discipleship</button>
+            </div>
+
+            <!-- All Ministries (default view) -->
+            <div id="all" class="ministry-category-content active">
+                <div class="ministry-grid">
+                    <!-- Prayer Ministry -->
+                    <div class="ministry-card-detailed" data-categories="prayer">
+                        <div class="ministry-img">
+                            <img src="https://images.unsplash.com/photo-1534237710431-e2fc698436d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Prayer Ministry">
+                        </div>
+                        <div class="ministry-content">
+                            <div class="ministry-header">
+                                <div class="ministry-icon">
+                                    <i class="fas fa-hands-praying"></i>
+                                </div>
+                                <div class="ministry-title">
+                                    <h3>Prayer Ministry</h3>
+                                    <div class="ministry-category">Prayer</div>
+                                </div>
+                            </div>
+                            <p>The heartbeat of our church, this ministry is dedicated to intercessory prayer, prophetic prayer, and teaching believers how to develop a powerful prayer life.</p>
+                            <div class="ministry-details">
+                                <div class="detail-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>Wednesdays 7 PM & Sundays after services</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>Open to all believers</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>24/7 Prayer Line: (123) 456-7891</span>
+                                </div>
+                            </div>
+                            <button class="join-btn">Join Prayer Ministry</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Children's Ministry -->
+                    <div class="ministry-card-detailed" data-categories="children">
+                        <div class="ministry-img">
+                            <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Children's Ministry">
+                        </div>
+                        <div class="ministry-content">
+                            <div class="ministry-header">
+                                <div class="ministry-icon">
+                                    <i class="fas fa-child"></i>
+                                </div>
+                                <div class="ministry-title">
+                                    <h3>Children's Ministry</h3>
+                                    <div class="ministry-category">Children & Youth</div>
+                                </div>
+                            </div>
+                            <p>Faith Kids provides a safe, fun, and engaging environment where children ages 0-12 can learn about God through age-appropriate lessons, worship, and activities.</p>
+                            <div class="ministry-details">
+                                <div class="detail-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>Sundays during both morning services</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>Ages 0-12, volunteers needed</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Background-checked volunteers only</span>
+                                </div>
+                            </div>
+                            <button class="join-btn">Serve in Children's Ministry</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Youth Ministry -->
+                    <div class="ministry-card-detailed" data-categories="children">
+                        <div class="ministry-img">
+                            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Youth Ministry">
+                        </div>
+                        <div class="ministry-content">
+                            <div class="ministry-header">
+                                <div class="ministry-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="ministry-title">
+                                    <h3>Youth Ministry</h3>
+                                    <div class="ministry-category">Children & Youth</div>
+                                </div>
+                            </div>
+                            <p>Fusion Youth Ministry creates a space for teenagers (13-18) to encounter God, build authentic relationships, and grow in their faith through relevant teaching and activities.</p>
+                            <div class="ministry-details">
+                                <div class="detail-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>Fridays 7:30 PM & Sundays 6 PM</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>Ages 13-18, youth leaders needed</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-gamepad"></i>
+                                    <span>Games, worship, small groups</span>
+                                </div>
+                            </div>
+                            <button class="join-btn">Join Youth Ministry</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Worship Ministry -->
+                    <div class="ministry-card-detailed" data-categories="worship">
+                        <div class="ministry-img">
+                            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Worship Ministry">
+                        </div>
+                        <div class="ministry-content">
+                            <div class="ministry-header">
+                                <div class="ministry-icon">
+                                    <i class="fas fa-music"></i>
+                                </div>
+                                <div class="ministry-title">
+                                    <h3>Worship & Arts Ministry</h3>
+                                    <div class="ministry-category">Worship & Arts</div>
+                                </div>
+                            </div>
+                            <p>Our worship team leads the congregation into God's presence through music, song, and creative arts. This ministry includes vocalists, musicians, dancers, and technical crew.</p>
+                            <div class="ministry-details">
+                                <div class="detail-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>Rehearsals: Thursdays 7 PM</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>Audition required for serving</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-microphone"></i>
+                                    <span>All skill levels welcome to train</span>
+                                </div>
+                            </div>
+                            <button class="join-btn">Audition for Worship Team</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Outreach Ministry -->
+                    <div class="ministry-card-detailed" data-categories="outreach">
+                        <div class="ministry-img">
+                            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Outreach Ministry">
+                        </div>
+                        <div class="ministry-content">
+                            <div class="ministry-header">
+                                <div class="ministry-icon">
+                                    <i class="fas fa-hand-holding-heart"></i>
+                                </div>
+                                <div class="ministry-title">
+                                    <h3>Outreach Ministry</h3>
+                                    <div class="ministry-category">Outreach</div>
+                                </div>
+                            </div>
+                            <p>This ministry serves our local community through food distribution, clothing drives, prison ministry, and evangelism outreaches to share God's love in practical ways.</p>
+                            <div class="ministry-details">
+                                <div class="detail-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>Monthly outreaches, various times</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>All welcome, no experience needed</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-utensils"></i>
+                                    <span>Food pantry: Saturdays 10 AM-12 PM</span>
+                                </div>
+                            </div>
+                            <button class="join-btn">Volunteer for Outreach</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Discipleship Ministry -->
+                    <div class="ministry-card-detailed" data-categories="discipleship">
+                        <div class="ministry-img">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Discipleship Ministry">
+                        </div>
+                        <div class="ministry-content">
+                            <div class="ministry-header">
+                                <div class="ministry-icon">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <div class="ministry-title">
+                                    <h3>Discipleship Ministry</h3>
+                                    <div class="ministry-category">Discipleship</div>
+                                </div>
+                            </div>
+                            <p>Small groups and one-on-one mentoring to help believers grow in their relationship with God, understand the Bible, and apply biblical principles to daily life.</p>
+                            <div class="ministry-details">
+                                <div class="detail-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>Groups meet throughout the week</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-user-friends"></i>
+                                    <span>Various group types available</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-home"></i>
+                                    <span>Meet in homes or at church</span>
+                                </div>
+                            </div>
+                            <button class="join-btn">Join a Small Group</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prayer Ministries (hidden by default) -->
+            <div id="prayer" class="ministry-category-content">
+                <!-- Content would be filtered to show only prayer ministries -->
+                <div class="ministry-grid">
+                    <!-- Prayer Ministry Card would be here -->
+                </div>
+            </div>
+
+            <!-- Other category divs would follow similar pattern -->
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section class="get-involved" id="get-involved">
+        <div class="container">
+            <div class="involved-content">
+                <div class="involved-text">
+                    <h2>How to Get Involved</h2>
+                    <p>Ready to serve and grow through one of our ministries? Here's how you can get started:</p>
+                    
+                    <ul class="involved-list">
+                        <li>
+                            <i class="fas fa-pray"></i>
+                            <div>
+                                <strong>Pray about it</strong> - Ask God to guide you to the right ministry where you can use your gifts.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-info-circle"></i>
+                            <div>
+                                <strong>Get information</strong> - Attend our "Ministry Connect" event held quarterly to learn about all our ministries.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-handshake"></i>
+                            <div>
+                                <strong>Meet with a leader</strong> - Connect with the ministry leader to discuss expectations and commitment.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-user-check"></i>
+                            <div>
+                                <strong>Complete training</strong> - All ministry volunteers complete basic training and background checks where applicable.
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-rocket"></i>
+                            <div>
+                                <strong>Start serving</strong> - Begin your ministry journey with the support of our church family!
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;">Contact Us to Get Started</a>
+                </div>
+                
+                <div class="involved-image">
+                    <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="People serving together">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Faith Prophetic Prayer Network</h3>
+                    <p class="footer-description">A place where faith is nurtured, prayer is powerful, and prophetic ministry transforms lives.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Faith Avenue, Prayer City, PC 12345</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@faithprayernetwork.org</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Faith Prophetic Prayer Network. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Ministry filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const ministryCards = document.querySelectorAll('.ministry-card-detailed');
+            
+            // Tab button click event
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const category = this.getAttribute('data-category');
+                    
+                    // Show/hide ministry cards based on category
+                    ministryCards.forEach(card => {
+                        const categories = card.getAttribute('data-categories');
+                        
+                        if (category === 'all' || categories === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Join button functionality
+            const joinButtons = document.querySelectorAll('.join-btn');
+            joinButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    alert('Thank you for your interest! Our ministry team will contact you with more information.');
+                });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

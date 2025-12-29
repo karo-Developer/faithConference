@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Faith Prophetic Prayer Network</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-cross"></i>
+                <span class="logo-text">FPPN</span>
+                <span class="logo-subtitle">Faith Prophetic Prayer Network</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="ministries.html" class="nav-link">Ministries</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="prayer.html" class="nav-link">Prayer Requests</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Reach out with questions, prayer requests, or to learn more about our church</p>
+        </div>
+    </section>
+
+    <!-- Contact Intro -->
+    <section class="contact-intro">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Whether you're new to Faith Prophetic Prayer Network, looking to get involved, or need prayer support, our team is here to help. Use the contact form below or reach out to us directly through any of the methods listed.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h3>Send Us a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name <span class="required">*</span></label>
+                                <input type="text" id="firstName" class="form-input" placeholder="Enter your first name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">Last Name <span class="required">*</span></label>
+                                <input type="text" id="lastName" class="form-input" placeholder="Enter your last name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address <span class="required">*</span></label>
+                            <input type="email" id="contactEmail" class="form-input" placeholder="Enter your email address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" class="form-input" placeholder="Enter your phone number (optional)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject <span class="required">*</span></label>
+                            <select id="subject" class="form-select" required>
+                                <option value="" disabled selected>Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="visit">Planning a Visit</option>
+                                <option value="ministry">Ministry Involvement</option>
+                                <option value="prayer">Prayer Request</option>
+                                <option value="giving">Giving/Donations</option>
+                                <option value="event">Event Information</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message <span class="required">*</span></label>
+                            <textarea id="message" class="form-textarea" placeholder="Please type your message here..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                        
+                        <div class="success-message" id="successMessage">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for contacting us. We'll get back to you as soon as possible, typically within 24-48 hours.</p>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Visit Our Church</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-church"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h4>Our Location</h4>
+                                    <p>123 Faith Avenue<br>Prayer City, PC 12345<br>United States</p>
+                                    <a href="#map">Get Directions</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h4>Phone Numbers</h4>
+                                    <p>Main Office: <a href="tel:1234567890">(123) 456-7890</a><br>
+                                    Prayer Hotline: <a href="tel:1234567729">(123) 456-PRAY</a><br>
+                                    Fax: (123) 456-7891</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h4>Email Addresses</h4>
+                                    <p>General: <a href="mailto:info@faithprayernetwork.org">info@faithprayernetwork.org</a><br>
+                                    Prayer: <a href="mailto:prayer@faithprayernetwork.org">prayer@faithprayernetwork.org</a><br>
+                                    Giving: <a href="mailto:giving@faithprayernetwork.org">giving@faithprayernetwork.org</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hours-card">
+                        <h3><i class="far fa-clock"></i> Office Hours</h3>
+                        <div class="hours-list">
+                            <div class="hour-item">
+                                <span class="day">Monday - Thursday</span>
+                                <span class="time">9:00 AM - 5:00 PM</span>
+                            </div>
+                            <div class="hour-item">
+                                <span class="day">Friday</span>
+                                <span class="time">9:00 AM - 3:00 PM</span>
+                            </div>
+                            <div class="hour-item">
+                                <span class="day">Saturday</span>
+                                <span class="time closed">Closed</span>
+                            </div>
+                            <div class="hour-item">
+                                <span class="day">Sunday</span>
+                                <span class="time">8:00 AM - 1:00 PM</span>
+                            </div>
+                        </div>
+                        <p style="margin-top: 20px; color: var(--gray); font-size: 0.9rem;">
+                            <i class="fas fa-info-circle"></i> Note: Office hours may vary on holidays. Sunday hours are for before and after services only.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Directions -->
+    <section class="map-section" id="map">
+        <div class="container">
+            <div class="map-container">
+                <div class="map-directions">
+                    <h2>Find Our Location</h2>
+                    <p>We're located in the heart of Prayer City, easily accessible from major highways with plenty of parking available. Our campus includes the main sanctuary, fellowship hall, children's ministry building, and prayer garden.</p>
+                    
+                    <div class="directions-list">
+                        <div class="direction-item">
+                            <i class="fas fa-car"></i>
+                            <div>
+                                <h4>By Car</h4>
+                                <p>Take Highway 101 to Exit 45 (Faith Avenue). Turn west and continue for 2 miles. The church will be on your right.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="direction-item">
+                            <i class="fas fa-bus"></i>
+                            <div>
+                                <h4>Public Transportation</h4>
+                                <p>Bus routes 12, 24, and 45 stop at Faith Avenue & Prayer Street, just a 5-minute walk from the church.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="direction-item">
+                            <i class="fas fa-parking"></i>
+                            <div>
+                                <h4>Parking</h4>
+                                <p>Guest parking is available in the front lot. Additional parking is available in the rear and side lots.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://maps.google.com/?q=123+Faith+Avenue+Prayer+City+PC+12345" target="_blank" class="btn btn-primary">Open in Google Maps</a>
+                </div>
+                
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.177858804427!2d-73.98784428459418!3d40.70555197933208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a315cdf4c9b%3A0x8b934de5cae6f7a!2s123%20Faith%20Ave%2C%20New%20York%2C%20NY%2010013%2C%20USA!5e0!3m2!1sen!2s!4v1633032563568!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Contacts -->
+    <section class="staff-section">
+        <div class="container">
+            <h2>Meet Our Staff</h2>
+            <div class="staff-grid">
+                <div class="staff-card">
+                    <div class="staff-header">
+                        <div class="staff-img">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pastor James Johnson">
+                        </div>
+                        <div class="staff-info">
+                            <h4>Pastor James Johnson</h4>
+                            <div class="position">Senior Pastor</div>
+                            <div style="font-size: 0.9rem; color: var(--gray);">Ext. 101</div>
+                        </div>
+                    </div>
+                    <div class="staff-details">
+                        <p>Pastor James provides overall leadership and vision for Faith Prophetic Prayer Network. He oversees preaching, teaching, and pastoral care.</p>
+                        <div class="staff-contact">
+                            <div class="staff-contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>pastorjames@faithprayernetwork.org</span>
+                            </div>
+                            <div class="staff-contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>(123) 456-7890 ext. 101</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="staff-card">
+                    <div class="staff-header">
+                        <div class="staff-img">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pastor Sarah Johnson">
+                        </div>
+                        <div class="staff-info">
+                            <h4>Pastor Sarah Johnson</h4>
+                            <div class="position">Associate Pastor</div>
+                            <div style="font-size: 0.9rem; color: var(--gray);">Ext. 102</div>
+                        </div>
+                    </div>
+                    <div class="staff-details">
+                        <p>Pastor Sarah oversees prayer ministry, women's ministry, and community outreach. She coordinates all prayer requests and intercessory teams.</p>
+                        <div class="staff-contact">
+                            <div class="staff-contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>pastorsarah@faithprayernetwork.org</span>
+                            </div>
+                            <div class="staff-contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>(123) 456-7890 ext. 102</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="staff-card">
+                    <div class="staff-header">
+                        <div class="staff-img">
+                            <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Minister David Chen">
+                        </div>
+                        <div class="staff-info">
+                            <h4>Minister David Chen</h4>
+                            <div class="position">Worship & Arts Director</div>
+                            <div style="font-size: 0.9rem; color: var(--gray);">Ext. 103</div>
+                        </div>
+                    </div>
+                    <div class="staff-details">
+                        <p>David leads our worship ministry, including the worship team, choir, and creative arts. He oversees all musical aspects of our services.</p>
+                        <div class="staff-contact">
+                            <div class="staff-contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>david@faithprayernetwork.org</span>
+                            </div>
+                            <div class="staff-contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>(123) 456-7890 ext. 103</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What should I expect when I visit for the first time?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>When you visit Faith Prophetic Prayer Network for the first time, you can expect a warm welcome from our greeting team, uplifting worship, relevant biblical teaching, and an opportunity to receive prayer. Our services typically last about 90 minutes. We recommend arriving 10-15 minutes early to find parking and get settled. Be sure to stop by our welcome center after the service to receive a gift and meet some of our team.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is available for children during services?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer age-appropriate children's ministry for infants through 5th grade during all Sunday morning services. Our children's ministry includes worship, Bible lessons, activities, and games in a safe, secure environment. All of our children's ministry volunteers are background-checked and trained. When you arrive, you can check your children in at our children's ministry kiosk where you'll receive a secure tag for pick-up after the service.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How can I get involved in ministry at the church?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We encourage everyone to get involved in ministry! The best way to start is by attending our "Ministry Connect" event held quarterly, where you can learn about all our ministry opportunities. You can also fill out a ministry interest form on our website or contact the church office. Many ministries have training sessions for new volunteers, and some require background checks (especially those working with children or vulnerable populations).</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How do I submit a prayer request?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can submit prayer requests in several ways: 1) Fill out the prayer request form on our website, 2) Call our 24/7 prayer hotline at (123) 456-PRAY, 3) Fill out a prayer request card during any service, or 4) Email prayer@faithprayernetwork.org. All prayer requests are confidential and shared only with our prayer team unless you specify otherwise. Our team prays over every request we receive.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer counseling services?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer biblical counseling for individuals, couples, and families. Our counseling ministry is led by trained counselors who provide guidance based on Scripture. To request counseling, please contact the church office to schedule an initial consultation. We also offer support groups for various life challenges including grief, addiction recovery, and divorce care. All counseling is confidential, and there may be a modest fee for extended sessions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Faith Prophetic Prayer Network</h3>
+                    <p class="footer-description">A place where faith is nurtured, prayer is powerful, and prophetic ministry transforms lives.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Faith Avenue, Prayer City, PC 12345</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@faithprayernetwork.org</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Faith Prophetic Prayer Network. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Contact form functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            const successMessage = document.getElementById('successMessage');
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Basic form validation
+                const firstName = document.getElementById('firstName').value;
+                const lastName = document.getElementById('lastName').value;
+                const email = document.getElementById('contactEmail').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+                
+                if (!firstName || !lastName || !email || !subject || !message) {
+                    alert('Please fill in all required fields.');
+                    return;
+                }
+                
+                // Email validation
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    alert('Please enter a valid email address.');
+                    return;
+                }
+                
+                // In a real application, you would send the form data to a server here
+                // For now, we'll just show a success message
+                
+                // Show success message
+                successMessage.style.display = 'block';
+                
+                // Scroll to success message
+                successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                // Reset form after 5 seconds
+                setTimeout(() => {
+                    contactForm.reset();
+                    successMessage.style.display = 'none';
+                }, 5000);
+                
+                // Log the submission (in a real app, this would be a server request)
+                console.log('Contact form submitted:', {
+                    firstName: firstName,
+                    lastName: lastName,
+                    email: email,
+                    phone: document.getElementById('contactPhone').value,
+                    subject: subject,
+                    message: message
+                });
+            });
+            
+            // FAQ functionality
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    
+                    // Close all other FAQ answers
+                    faqQuestions.forEach(q => {
+                        if (q !== this) {
+                            q.classList.remove('active');
+                            q.nextElementSibling.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current FAQ
+                    this.classList.toggle('active');
+                    answer.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

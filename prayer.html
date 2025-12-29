@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Requests - Faith Prophetic Prayer Network</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-cross"></i>
+                <span class="logo-text">FPPN</span>
+                <span class="logo-subtitle">Faith Prophetic Prayer Network</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="ministries.html" class="nav-link">Ministries</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="prayer.html" class="nav-link active">Prayer Requests</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Prayer Requests</h1>
+            <p>We believe in the power of prayer to transform lives, heal relationships, and bring hope in difficult times</p>
+        </div>
+    </section>
+
+    <!-- Prayer Intro -->
+    <section class="prayer-intro">
+        <div class="container">
+            <h2>Let Us Pray With You</h2>
+            <p>At Faith Prophetic Prayer Network, prayer is at the heart of everything we do. Our dedicated prayer team is committed to interceding for your needs, whether they are physical, emotional, relational, or spiritual. Submit your prayer request below, and know that our team will lift you up in prayer.</p>
+        </div>
+    </section>
+
+    <!-- Prayer Request Section -->
+    <section class="prayer-request-section">
+        <div class="container">
+            <div class="prayer-container">
+                <!-- Prayer Request Form -->
+                <div class="prayer-form-container">
+                    <h3>Submit Your Prayer Request</h3>
+                    <form class="prayer-form" id="prayerForm">
+                        <div class="form-group">
+                            <label for="name">Your Name <span class="required">*</span></label>
+                            <input type="text" id="name" class="form-input" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="Enter your email (optional)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-input" placeholder="Enter your phone (optional)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="prayerType">Prayer Type <span class="required">*</span></label>
+                            <select id="prayerType" class="form-select" required>
+                                <option value="" disabled selected>Select a prayer category</option>
+                                <option value="healing">Healing (Physical/Emotional)</option>
+                                <option value="family">Family & Relationships</option>
+                                <option value="financial">Financial Needs</option>
+                                <option value="guidance">Guidance & Direction</option>
+                                <option value="salvation">Salvation for Loved Ones</option>
+                                <option value="spiritual">Spiritual Growth</option>
+                                <option value="work">Work/Career</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="request">Your Prayer Request <span class="required">*</span></label>
+                            <textarea id="request" class="form-textarea" placeholder="Please share your prayer request in detail..." required></textarea>
+                        </div>
+                        
+                        <div class="privacy-note">
+                            <input type="checkbox" id="privacy" required>
+                            <label for="privacy">I understand that my prayer request will be shared with our prayer team and may be shared anonymously during prayer meetings.</label>
+                        </div>
+                        
+                        <div class="privacy-note">
+                            <input type="checkbox" id="contact">
+                            <label for="contact">I would like to be contacted by a member of our prayer team for follow-up prayer.</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Submit Prayer Request</button>
+                        
+                        <div class="success-message" id="successMessage">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Prayer Request Submitted!</h3>
+                            <p>Thank you for sharing your prayer request with us. Our prayer team will begin praying for you immediately. You are loved and valued.</p>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Prayer Information -->
+                <div class="prayer-info">
+                    <div class="prayer-promise">
+                        <h3><i class="fas fa-hands-praying"></i> God's Promise for You</h3>
+                        <p>The Bible tells us that God hears our prayers and answers them according to His perfect will. When we bring our needs before Him, we can trust that He is working on our behalf.</p>
+                        <div class="verse">
+                            "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus." 
+                            <br><strong>- Philippians 4:6-7</strong>
+                        </div>
+                        <p>Our prayer team is committed to standing with you in faith, believing for God's intervention in your situation. Whether you're facing a health challenge, relationship issue, financial need, or spiritual battle, we're here to pray with you.</p>
+                    </div>
+                    
+                    <div class="prayer-types">
+                        <h3>Types of Prayer We Offer</h3>
+                        <div class="prayer-type-list">
+                            <div class="prayer-type-item">
+                                <div class="prayer-type-icon">
+                                    <i class="fas fa-heartbeat"></i>
+                                </div>
+                                <div class="prayer-type-content">
+                                    <h4>Healing Prayer</h4>
+                                    <p>For physical, emotional, or mental healing. We believe in God's power to restore health and wholeness.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="prayer-type-item">
+                                <div class="prayer-type-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="prayer-type-content">
+                                    <h4>Family & Relationships</h4>
+                                    <p>Prayer for marriages, parent-child relationships, friendships, and reconciliation.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="prayer-type-item">
+                                <div class="prayer-type-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="prayer-type-content">
+                                    <h4>Work & Finances</h4>
+                                    <p>Prayer for job provision, career decisions, financial breakthrough, and business success.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="prayer-type-item">
+                                <div class="prayer-type-icon">
+                                    <i class="fas fa-compass"></i>
+                                </div>
+                                <div class="prayer-type-content">
+                                    <h4>Guidance & Direction</h4>
+                                    <p>Seeking God's will for important decisions, life transitions, or unclear paths.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prayer Resources -->
+    <section class="prayer-resources">
+        <div class="container">
+            <h2>Prayer Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Weekly Prayer Meetings</h3>
+                    <p>Join us every Wednesday at 7 PM for corporate prayer. We gather to pray for our church, community, and submitted prayer requests.</p>
+                    <a href="services.html" class="btn btn-outline">Service Times</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Prayer Partners</h3>
+                    <p>Connect with a prayer partner for one-on-one prayer support and encouragement in your spiritual journey.</p>
+                    <a href="ministries.html" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Prayer Guides</h3>
+                    <p>Access our library of prayer guides and scriptures to help you develop a more effective prayer life.</p>
+                    <a href="#" class="btn btn-outline">Download Guides</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Online Prayer Room</h3>
+                    <p>Join our 24/7 online prayer room for continuous prayer and worship streams available anytime.</p>
+                    <a href="#" class="btn btn-outline">Enter Prayer Room</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prayer Hotline -->
+    <section class="prayer-hotline">
+        <div class="container">
+            <div class="hotline-content">
+                <h2>24/7 Prayer Hotline</h2>
+                <p>For urgent prayer needs outside of regular hours, our prayer hotline is available around the clock. One of our trained prayer counselors is ready to pray with you anytime, day or night.</p>
+                
+                <div class="hotline-number">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>(123) 456-PRAY</span>
+                </div>
+                
+                <div class="hotline-hours">
+                    <h4>Available 24 Hours a Day, 7 Days a Week</h4>
+                    <p>All calls are confidential and answered by trained prayer counselors.</p>
+                </div>
+                
+                <p style="margin-top: 30px; font-size: 1rem; color: var(--gray);">
+                    <i class="fas fa-info-circle"></i> For non-prayer related inquiries, please call our main office at (123) 456-7890 during business hours.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Faith Prophetic Prayer Network</h3>
+                    <p class="footer-description">A place where faith is nurtured, prayer is powerful, and prophetic ministry transforms lives.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Faith Avenue, Prayer City, PC 12345</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@faithprayernetwork.org</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Faith Prophetic Prayer Network. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Prayer form functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const prayerForm = document.getElementById('prayerForm');
+            const successMessage = document.getElementById('successMessage');
+            
+            prayerForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Basic form validation
+                const name = document.getElementById('name').value;
+                const prayerType = document.getElementById('prayerType').value;
+                const request = document.getElementById('request').value;
+                const privacy = document.getElementById('privacy').checked;
+                
+                if (!name || !prayerType || !request || !privacy) {
+                    alert('Please fill in all required fields and agree to the privacy statement.');
+                    return;
+                }
+                
+                // In a real application, you would send the form data to a server here
+                // For now, we'll just show a success message
+                
+                // Show success message
+                successMessage.style.display = 'block';
+                
+                // Scroll to success message
+                successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                // Reset form after 5 seconds
+                setTimeout(() => {
+                    prayerForm.reset();
+                    successMessage.style.display = 'none';
+                }, 5000);
+                
+                // Log the submission (in a real app, this would be a server request)
+                console.log('Prayer request submitted:', {
+                    name: name,
+                    email: document.getElementById('email').value,
+                    phone: document.getElementById('phone').value,
+                    prayerType: prayerType,
+                    request: request,
+                    contactRequested: document.getElementById('contact').checked
+                });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
